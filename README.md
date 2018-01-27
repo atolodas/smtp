@@ -1,4 +1,4 @@
-This extension sends Magento 2 emails via an external SMTP server.
+This extension integrates a Magento 2 based webstore with an SMTP server to send emails.
 
 ## How to buy
 The extension is not released yet, so there is no way to buy it just now.  
