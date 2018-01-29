@@ -9,7 +9,7 @@ final class Service extends \Df\Config\Source {
 	 * @used-by \Df\Config\Source::toOptionArray()
 	 * @return array(string => string)
 	 */
-	protected function map() {return dfa_combine_self(self::Gmail, self::Mailgun, self::Other);}
+	protected function map() {return df_map_0(dfa_combine_self(self::Gmail, self::Mailgun, self::Other));}
 
 	const Gmail = 'Gmail';
 	const Mailgun = 'Mailgun';
