@@ -82,6 +82,7 @@ So the `sortOrder` value is 1920.
 						type='obscure'
 					>
 						<label>Password</label>
+						<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
 						<comment><![CDATA[<a href='https://mage2.pro/t/5339' target='_blank'>Where to find it?</a>]]></comment>
 						<validate>required-entry</validate>
 					</field>

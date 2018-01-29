@@ -22,7 +22,7 @@ final class Mailgun extends \Dfe\SMTP\Strategy {
 		 * Custom connection classes must be extensions of @see \Zend\Mail\Protocol\Smtp.»
 		 * https://docs.zendframework.com/zend-mail/transport/smtp-authentication/#connection_class
 		 */
-		'connection_class' => 'login'
+		'connection_class' => 'plain'
 		/**
 		 * 2018-01-29
 		 * 1) «Optional associative array of parameters to pass to the connection class in order to configure it.
@@ -52,7 +52,7 @@ final class Mailgun extends \Dfe\SMTP\Strategy {
 			,'username' => $s->login()
 		]
 		// 2018-01-29 «Remote hostname or IP address; defaults to "127.0.0.1"»
-		,'host' => ''
+		,'host' => 'smtp.mailgun.org'
 		// 2018-01-29 «Name of the SMTP host; defaults to "localhost"»
 		,'name' => 'smtp.mailgun.org'
 		// 2018-01-29 «Port on which the remote host is listening; defaults to "25"»

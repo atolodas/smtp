@@ -15,6 +15,7 @@ abstract class Strategy {
 
 	/**
 	 * 2017-01-30
+	 * @used-by \Dfe\SMTP\Transport::sendMessage()
 	 * @return array(string => mixed)
 	 */
 	static function options() {

@@ -1,6 +1,6 @@
 {
 	"name": "mage2pro/smtp"
-	,"version": "0.1.1"
+	,"version": "0.1.2"
 	,"description": "It sends Magento 2 emails via an external SMTP server"
 	,"type": "magento2-module"
 	,"homepage": "https://mage2.pro/c/extensions/smtp"
