@@ -4,6 +4,13 @@ namespace Dfe\SMTP;
 /** @method static Settings s() */
 final class Settings extends \Df\Config\Settings {
 	/**
+	 * 2018-01-30
+	 * @used-by \Dfe\SMTP\Strategy::options()
+	 * @return string
+	 */
+	function service() {return $this->v();}
+
+	/**
 	 * 2018-01-28
 	 * @override
 	 * @see \Df\Config\Settings::prefix()
