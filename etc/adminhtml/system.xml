@@ -41,6 +41,17 @@ So the `sortOrder` value is 1920.
 					<backend_model>Df\Config\Backend\Checkbox</backend_model>
 					<comment><![CDATA[Enable the «<a href='https://mage2.pro/c/extensions/smtp' target='_blank'>SMTP</a>» module?]]></comment>
 				</field>
+				<field
+					id='service'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='2'
+					translate='label'
+					type='select'
+				>
+					<label>Which SMTP service do you use?</label>
+					<source_model>Dfe\SMTP\Source\Service</source_model>
+					<depends><field id='enable'>1</field></depends>
+				</field>
 			</group>
 		</section>
 	</system>
