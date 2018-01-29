@@ -52,6 +52,30 @@ So the `sortOrder` value is 1920.
 					<source_model>Dfe\SMTP\Source\Service</source_model>
 					<depends><field id='enable'>1</field></depends>
 				</field>
+				<group
+					id='mailgun'
+					showInDefault='1' showInStore='1' showInWebsite='1'
+					sortOrder='2'
+					translate='label'
+				>
+					<label>Mailgun</label>
+					<comment><![CDATA[<a href='https://mage2.pro/t/2103' target='_blank'>Where to find it?</a>]]></comment>
+					<depends>
+						<field id='enable'>1</field>
+						<field id='service'>Mailgun</field>
+					</depends>
+					<field
+						id='login'
+						showInDefault='1' showInStore='1' showInWebsite='1'
+						sortOrder='2'
+						translate='label'
+						type='text'
+					>
+						<label>Login</label>
+						<comment><comment><![CDATA[<a href='https://mage2.pro/t/5339' target='_blank'>Where to find it?</a>]]></comment></comment>
+						<validate>validate-email</validate>
+					</field>
+				</group>
 			</group>
 		</section>
 	</system>
